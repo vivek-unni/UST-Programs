@@ -1,0 +1,57 @@
+package com.project.shop.services;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.project.shop.entity.Apple;
+import com.project.shop.repositories.AppleRepository;
+
+
+@Service
+public class AppleService {
+	
+	@Autowired
+	AppleRepository applerepository;
+	
+	public Apple save(Apple apple) {
+		return applerepository.save(apple);
+	}
+	
+	public List<Apple> getAllpro() {
+		return applerepository.findAll();
+	}
+	
+	public Optional<Apple> fetchById(long id) {
+		java.util.Optional<Apple> product=applerepository.findById(id);
+		if(product.isPresent()) {
+			return product;
+		}else {
+			return null;
+		}
+	}
+	
+	public Apple update(Apple newprod) {
+		long id=newprod.getProduct_id();
+		Optional<Apple> prod=applerepository.findById(id);
+		if(prod.isPresent()) {
+			return applerepository.save(newprod);
+		}else {
+			return null;
+		}
+	}
+	
+	public Optional<Apple> delete( long id) {
+		
+		Optional<Apple> prod=applerepository.findById(id);
+		if(prod.isPresent()) {
+			applerepository.deleteById(id);
+			return prod;
+		}else {
+			return null;
+		}
+	}
+
+}

@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: helloservice
+    
+server:
+  port: 8071
+  

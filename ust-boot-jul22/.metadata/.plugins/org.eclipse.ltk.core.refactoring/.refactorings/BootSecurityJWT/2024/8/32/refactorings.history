@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.ust.security.resources&apos; to &apos;BootSecurity-OAuth/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;BootSecurityJWT&apos;&#x0D;&#x0A;- Destination element: &apos;BootSecurity-OAuth/src/main/java&apos;&#x0D;&#x0A;- Original element: &apos;BootSecurityJWT/src/main/java/com.ust.security.resources&apos;" description="Copy package" destination="=BootSecurity-OAuth/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ust.security.resources" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1722929745479" version="1.0"/>
+</session>

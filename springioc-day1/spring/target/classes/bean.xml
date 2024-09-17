@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+    <bean name="countryEgg" class="com.test1.testing.Egg">
+        <constructor-arg name="id" value="101"></constructor-arg>
+        <constructor-arg name="description" value="Heritage"></constructor-arg>
+        <constructor-arg name="qty" value="25"></constructor-arg>
+    </bean>
+
+	<bean name="countryEgg1" class="com.test1.testing.Egg">
+		<constructor-arg name="id" value="102"></constructor-arg>
+		<constructor-arg name="description" value="Heritage"></constructor-arg>
+		<constructor-arg name="qty" value="30"></constructor-arg>
+	</bean>
+	
+	<bean name="countryEgg2" class="com.test1.testing.Egg">
+		<constructor-arg name="id" value="103"></constructor-arg>
+		<constructor-arg name="description" value="Heritage"></constructor-arg>
+		<constructor-arg name="qty" value="40"></constructor-arg>
+	</bean>
+	
+	<bean name="eggsList" class="java.util.ArrayList">
+		<constructor-arg>
+		    <list>
+		        <ref bean="countryEgg"/>
+		        <ref bean="countryEgg1"/>
+		        <ref bean="countryEgg2"/>
+		    </list>
+		</constructor-arg>
+	</bean>
+
+</beans>

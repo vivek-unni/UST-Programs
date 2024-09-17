@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.ust.cloud.model&apos; to &apos;FeignProductService/src/main/java/com.ust.cloud&apos;&#x0D;&#x0A;- Original project: &apos;FeignClient&apos;&#x0D;&#x0A;- Destination element: &apos;FeignProductService/src/main/java/com.ust.cloud&apos;&#x0D;&#x0A;- Original element: &apos;FeignClient/src/main/java/com.ust.cloud.model&apos;" description="Copy package" destination="=FeignProductService/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ust.cloud" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ust.cloud.model" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1721907227808" version="1.0"/>
+</session>

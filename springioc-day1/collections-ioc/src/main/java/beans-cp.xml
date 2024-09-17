@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:context= "http://www.springframework.org/schema/context"
+xsi:schemaLocation="http://www.springframework.org/schema/context 
+					https://www.springframework.org/schema/context/spring-context.xsd
+					http://www.springframework.org/schema/beans 
+					http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+					
+<context:annotation-config />
+
+		<bean name="lifeCycleBean" class="com.day3.annotations.LifeCycleAnnotations">
+			
+		</bean>
+
+
+
+
+
+
+
+
+
+					<!--<bean name="rect" class="com.iiht.iocday2.Rectangle" init-method="init" destroy-method="destroy">
+						<property name="length" value="25.876"></property>
+						<property name="breadth" value="75.8965"></property>	
+					</bean>
+					
+					<bean name="tri" class="com.iiht.iocday2.Triangle">
+						<property name="height" value="25.876"></property>
+						<property name="base" value="75.8965"></property>	
+					</bean>
+					
+					<bean name="rho" class="com.iiht.iocday2.Rhombus">
+						<property name="height" value="25.876"></property>
+						<property name="base" value="75.8965"></property>	
+					</bean>-->
+					
+					
+					
+					
+					
+									
+					
+					
+					
+					
+					
+					 
+					
+					<!--<bean name="a1" class="com.iiht.ioc.A">
+						<constructor-arg name="name" value="John Doe"></constructor-arg>
+						<constructor-arg name="gender" value="Male"></constructor-arg>
+					</bean>
+					
+					<bean name="a2" class="com.iiht.ioc.A">
+						<constructor-arg name="name" value="Jane Doe"></constructor-arg>
+						<constructor-arg name="gender" value="Female"></constructor-arg>
+					</bean>
+					
+					<bean name="a3" class="com.iiht.ioc.A">
+						<constructor-arg name="name" value="James Doe"></constructor-arg>
+						<constructor-arg name="gender" value="Male"></constructor-arg>
+					</bean>
+					
+					<bean name="a4" class="com.iiht.ioc.A">
+						<constructor-arg name="name" value="Mary Jane"></constructor-arg>
+						<constructor-arg name="gender" value="Female"></constructor-arg>
+					</bean>
+					
+					<bean name="javaTeam" class="com.iiht.ioc.Members" autowire="constructor">
+						<constructor-arg>
+							<list>
+								<ref bean="a1"/>
+								<ref bean="a2"/>
+							</list>
+							
+							
+						</constructor-arg>
+						<property name="members">
+							<list>
+								<ref bean="a3"/>
+								<ref bean="a4"/>
+							</list>
+						</property>
+					</bean> -->
+					
+					<!--<bean name="p1" class="com.iiht.line.Points">
+						<constructor-arg name="x" value="5"></constructor-arg>
+						<constructor-arg name="y" value="7"></constructor-arg>
+					</bean>
+					<bean name="p2" class="com.iiht.line.Points">
+						<constructor-arg name="x" value="9"></constructor-arg>
+						<constructor-arg name="y" value="10"></constructor-arg>
+					</bean>
+					<bean name="javaLine" class="com.iiht.line.Line" autowire="constructor">
+						
+					</bean>-->
+					
+	<!--In beans factory Beans are Lazily loaded and in the Application context Singletons are eagerly loaded-->
+				
+</beans>
